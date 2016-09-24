@@ -1,7 +1,6 @@
 # VictiScout-Server
 
-Basic server layout
-
+Server for VictiScout
 Setup:
 
 1. Create a virtualenv by doing ```virtualenv flask```
