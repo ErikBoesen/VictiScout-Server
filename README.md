@@ -1,12 +1,21 @@
 # VictiScout-Server
 
-Server for VictiScout
-Setup:
+Server for [VictiScout](https://github.com/frc1418/VictiScout).
 
-1. Create a virtualenv by doing ```virtualenv flask```
-2. Run the environment by doing ```. flask/bin/activate```
-3. Install all the requirements ```pip install -r requirements.txt```
-4. Make sure that you have MongoDB installed and running(if not see [here](https://docs.mongodb.com/manual/installation/))
-5. Run the server by doing ```python server.py```
-6. Run the test file in the same directory as the server for an example of the post and get data
 
+## Dependencies
+* [MongoDB](https://docs.mongodb.com/manual/installation/)
+
+## Using
+1. Create a virtualenv:
+        virtualenv flask
+2. Run the environment:
+        . flask/bin/activate
+3. Install all the requirements:
+        pip install -r requirements.txt
+4. Run the server:
+        python server.py
+
+## Credits
+* [Erik Boesen](https://github.com/ErikBoesen)
+* [Tom Orth](https://github.com/atf1999) - Original server framework
