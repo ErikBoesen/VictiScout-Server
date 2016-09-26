@@ -2,6 +2,8 @@
 
 Server for [VictiScout](https://github.com/frc1418/VictiScout).
 
+## How this server works
+TODO
 
 ## Dependencies
 * [MongoDB](https://docs.mongodb.com/manual/installation/)

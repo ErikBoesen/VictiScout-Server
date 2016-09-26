@@ -1,9 +1,10 @@
 import pymongo
 import json
 from bson import json_util
+
 class DBClient(object):
-    
-    #creates a collection for scouting data 
+
+    # Create a collection to hold scouting data
     def __init__(self, ip, port):
 
         self.client = pymongo.MongoClient(ip, port)
@@ -12,17 +13,17 @@ class DBClient(object):
         self.data = []
 
     def insertData(self, j):
-        #inserts into the collection (table)
+
+        # Insert data into the collection
         self.collection.insert(j)
 
-    def getAllResults(self):
-        
-        #gets all scouting data in a cursor
+    def getData(self):
+
+        # Get all the data
         cursor = self.collection.find()
-        
-        #converts cursor to json 
+
+        # Convert to JSON
         for doc in cursor:
             tmp_doc = json.dumps(doc, default=json_util.default)
             self.data.append(tmp_doc)
-        return str(self.data)     
-        
+        return str(self.data)
