@@ -24,6 +24,6 @@ class DBClient(object):
 
         # Convert to JSON
         for doc in cursor:
-            tmp_doc = json.dumps(doc, default=json_util.default)
+            tmp_doc = json.dumps(doc, default = json_util.default)
             self.data.append(tmp_doc)
-        return str(self.data)
+        return str(json.loads(self.data))

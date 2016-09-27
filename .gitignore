@@ -90,7 +90,11 @@ ENV/
 .ropeproject
 
 # Other project-specific things
-WiredTiger.turtle
+mongod.lock
+WiredTiger*
 flask
 output.txt
 *.wt
+*.json
+*.bson
+diagnostic.data
