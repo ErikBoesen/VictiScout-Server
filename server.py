@@ -10,7 +10,7 @@ client = DBClient('localhost', 27017)
 # Main page
 @app.route('/')
 def start():
-    return '<h1>It works!</h1>\nThis is the main page for the scouting server. This page itself is useless. If you want to upload some data, submit it with a POST request to /api/data.'
+    return '<h1>It works!</h1>\nThis is the main page for the scouting server. This page itself is useless. If you want to upload some data, submit it with a POST request to /api/data. If you want to fetch ALLL the data, submit a GET request. All this stuff is done automatically through the VictiScout application. Check it out sometime.'
 
 # Open data submission route
 @app.route('/api/data', methods = ['GET', 'POST'])
